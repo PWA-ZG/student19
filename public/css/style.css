@@ -1,0 +1,82 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #startRecord {
+    background-image: url('icons/record.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #stopRecord {
+    background-image: url('icons/stop.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #saveRecording {
+    background-image: url('icons/upload.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #deleteRecording {
+    background-image: url('icons/delete.png');
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  }
+  
+  #audioPlayer {
+    margin-top: 20px;
+  }
+  
+  #recordingIndicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: red;
+  visibility: hidden;
+  animation: blinkAnimation 1s infinite alternate;
+}
+
+@keyframes blinkAnimation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+#fileList {
+  max-height: 200px; /* Adjust the maximum height as needed */
+  overflow-y: auto;
+  border: 0px solid #000000;
+  padding: 10px;
+}

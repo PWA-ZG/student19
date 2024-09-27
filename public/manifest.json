@@ -1,0 +1,33 @@
+{
+    "name": "Dictaphone",
+    "short_name": "DictPWA",
+    "description": "Dictaphone PWA App written in JS.",
+    "start_url": "/views/index.ejs",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2196f3",
+    "icons": [
+      {
+        "src": "/css/icons/icon-144x144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+    },
+    {
+      "src": "/css/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+  },
+  {
+    "src": "/css/icons/maskable_icon.png",
+    "sizes": "196x196",
+    "type": "image/png",
+    "purpose": "any maskable"
+  }
+    ],
+    "serviceworker": {
+      "src": "/service-worker.js"
+    },
+    "scope": "/",
+    "lang": "en-US"
+  }
+  
